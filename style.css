@@ -9,3 +9,18 @@ body {
     border-radius: 16px;
     padding: 30px;
 }
+.search-form-input {
+    background-color: #f9f7fe;
+    border: none;
+    border-radius: 6px;
+    width: 60%;
+    padding: 20px;
+}
+.search-form-btn {
+    background-color: purple;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 6px;
+    margin-left: 5px;
+    color: white;
+}

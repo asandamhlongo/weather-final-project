@@ -44,12 +44,11 @@ main {
 .weather-container {
     display: flex;
 }
-.current-temperature-emoji {
+#icon {
     position: relative;
-        top: -7px;
-        font-size: 40px;
-        margin-top: 30px;
-        margin-right: 10px;
+    top: -5px;
+    width: 88px;
+    height: 88px;
 }
 .current-temperature-value {
     font-size: 88px;

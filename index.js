@@ -43,7 +43,42 @@ function handleSearchSubmit(event) {
 
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let days = ["Tues", "Wed", "Thur", "Fri", "Sat"];
+  let forecastHtml = "";
+
+  days.forEach(function(day){
+
+forecastHtml = 
+   forecastHtml + `<div class="weather-forecast">
+            <div class="row">
+                <div class="col-2">
+                    <p class="forecast-date">${day}</p>
+                    <img id="forecast-icon" src=" http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png">
+                    <div class="weather-forecast-temperature">
+                        <p>
+                            <span class=" weather-forecast-temperature-max">
+                                <strong>27°</strong>
+                            </span>
+                            <span class="weather-forecast-temperature-min">
+                            12°
+                        </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        `;
+  });
+
+  forecastElement.innerHTML = forecastHtml;
+}
 
 
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
+
+displayForecast();
+

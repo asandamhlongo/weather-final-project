@@ -68,11 +68,13 @@ main {
     justify-content: space-between;
 }
 .weather-forecast {
+    display: flex;
+    justify-content: space-between;
     margin-top: 20px;
 
 }
-img {
-    width: 35px;
+#forecast-icon {
+    width: 33px;
     margin-left: 0;
 }
 .weather-forecast-temperature {
